@@ -1,4 +1,4 @@
-# Laravel 7 使用 Pusher 開發即時聊天室
+# Laravel 10 使用 Pusher 開發即時聊天室
 
 引入 munafio 的 chatify 套件來擴增即時聊天室協助有條不紊地與團隊成員合作，同時進行討論。
 
@@ -24,15 +24,16 @@ $ php artisan storage:link
 ```sh
 $ npm install && npm run dev
 ```
-- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移，並執行資料庫填充（如果要測試的話）。
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
 ```sh
-$ php artisan migrate --seed
+$ php artisan migrate
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/chatify` 來進行即時訊息發送。
+> 備註：進到 Pusher 官網後，註冊會員並登入，在導覽面板中，按一下「應用程式設定」，然後啟動「啟用客戶事件」。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/Mh3sAjV.png)
+![](https://i.imgur.com/w472PHG.png)
 > 即時訊息是您和其他使用者之間的私人對話
